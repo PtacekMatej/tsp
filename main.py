@@ -19,8 +19,7 @@ def main():
     
 
     result = None        
-    points = [(622975, 82822), (729713, 920915), (562701, 838397), (606973, 667848), (479141, 174709)]
-    points = list(map(lambda x : (x[0] // 2000, x[1] // 2000), points))
+    points = []
 
     while True:
 

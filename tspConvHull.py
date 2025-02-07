@@ -29,7 +29,7 @@ def tspConvHullVisitorGetter(screen, points):
             elif event.type == pg.KEYDOWN:
                 raise Exception
         screen.fill(BG_COLOR)
-        drawLoop(path, screen, LINE_COLOR, 4)
+        drawPath(path, screen, LINE_COLOR, 4)
         drawPoints(points, screen)
         pg.display.flip()
         sleep(DELAY)
