@@ -6,6 +6,7 @@ from points import *
 from tspDP import *  
 from convexHull import *
 from tspConvHull import *
+from tspHillClimb import *
 
 from test import test
 
@@ -51,6 +52,12 @@ def main():
                     try:
                         result = None
                         result = tspConvHull(points, tspConvHullVisitorGetter(screen, points))
+                    except:
+                        pass
+                if event.key == pg.K_r:
+                    try:
+                        result = None
+                        result = tspHillClimb(points, tspHillClimbVisitorGetter(screen, points))
                     except:
                         pass
                 
